@@ -1,0 +1,30 @@
+{
+  "name": "conztant",
+  "version": "0.0.0",
+  "description": "Checks property if constant form.",
+  "main": "conztant.deploy.js",
+  "support": "conztant.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "check",
+    "property",
+    "constant",
+    "form",
+    "conztant"
+  ],
+  "homepage": "https://github.com/volkovasystems/conztant",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "falzy": "^0.17.0",
+    "protype": "^0.21.0"
+  }
+}
