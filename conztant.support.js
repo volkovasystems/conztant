@@ -37,7 +37,7 @@
               			"eMail": "richeve.bebedor@gmail.com",
               			"contributors": [
               				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-              				"Vinse Vinalon"
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
               			],
               			"repository": "https://github.com/volkovasystems/conztant.git",
               			"global": true
@@ -51,13 +51,11 @@
               	@include:
               		{
               			"falzy": "falzy",
-              			"protype": "protype"
               		}
               	@end-include
               */
 
 var falzy = require("falzy");
-var protype = require("protype");
 
 var CONSTANT_PATTERN = /^[A-Z][A-Z0-9_]*$/;
 
@@ -70,7 +68,7 @@ var conztant = function conztant(property) {
                                             	@end-meta-configuration
                                             */
 
-	if (falzy(property) || !protype(property, STRING)) {
+	if (falzy(property) || typeof property != "string") {
 		return true;
 	}
 
