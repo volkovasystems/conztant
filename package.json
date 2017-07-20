@@ -22,7 +22,8 @@
 		"test:client": "./node_modules/.bin/wdio wdio.client.js",
 		"pretest": "npm run clear && npm run rebuild && npm run build:test",
 		"test": "npm run test:server && npm run test:client",
-		"posttest": "npm run formal"
+		"posttest": "npm run formal",
+		"deploy": "npm run build && npm run build:test && npm run test:server && npm run test:client && npm run formal"
 	},
 	"repository": {
 		"type": "git",
