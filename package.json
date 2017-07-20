@@ -19,7 +19,8 @@
 		"build:test:bridge": "gulp --module test --bridge",
 		"build:test": "npm run build:test:support && npm run build:test:deploy && npm run build:test:bridge",
 		"test:server": "mocha test.js && mocha test.js --reporter=json > test.server.json",
-		"pretest": "npm run clear && npm run rebuild && npm run build:test"
+		"pretest": "npm run clear && npm run rebuild && npm run build:test",
+		"posttest": "npm run formal"
 	},
 	"repository": {
 		"type": "git",
