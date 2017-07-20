@@ -15,6 +15,8 @@
 		"rebuild": "npm run build:support && npm run build:deploy",
 		"build": "npm run pristine && npm run rebuild",
 		"build:test:support": "gulp --module test --all",
+		"build:test:deploy": "webpack --config webpack.test.js --progress --display-modules",
+		"build:test:bridge": "gulp --module test --bridge",
 		"test:server": "mocha test.js && mocha test.js --reporter=json > test.server.json"
 	},
 	"repository": {
