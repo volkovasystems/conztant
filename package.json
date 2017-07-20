@@ -1,11 +1,11 @@
 {
 	"name": "conztant",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"description": "Checks property if constant form.",
 	"main": "conztant.js",
 	"support": "conztant.support.js",
 	"deploy": "conztant.deploy.js",
-	"browser": "conztant.browser.js",
+	"browser": "conztant.deploy.js",
 	"scripts": {
 		"pristine": "rsetmod clean && flxc execute ./.install.sh",
 		"clear": "rsetmod clean --clear",
@@ -14,7 +14,8 @@
 		"build:deploy": "webpack --config webpack.compact.js --progress --display-modules",
 		"rebuild": "npm run build:support && npm run build:deploy",
 		"build": "npm run pristine && npm run rebuild",
-		"test:server": "mocha test.js"
+		"build:test:support": "gulp --module test --all",
+		"test:server": "mocha test.js && mocha test.js --reporter=json > test.server.json"
 	},
 	"repository": {
 		"type": "git",
