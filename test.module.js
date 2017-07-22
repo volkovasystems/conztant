@@ -74,9 +74,25 @@ const path = require( "path" );
 
 describe( "conztant", ( ) => {
 
-	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => it( "should return true", ( ) => assert.equal( conztant( "HELLO_WORLD" ), true ) ) );
+	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => {
 
-	describe( "`conztant( 'hello world' )`", ( ) => it( "should return false", ( ) => assert.equal( conztant( "hello world" ), false ) ) );
+		it( "should return true", ( ) => {
+
+			assert.equal( conztant( "HELLO_WORLD" ), true );
+
+		} );
+
+	} );
+
+	describe( "`conztant( 'hello world' )`", ( ) => {
+
+		it( "should return false", ( ) => {
+
+			assert.equal( conztant( "hello world" ), false );
+
+		} );
+
+	} );
 
 } );
 
@@ -87,9 +103,25 @@ describe( "conztant", ( ) => {
 
 describe( "conztant", ( ) => {
 
-	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => it( "should return true", ( ) => assert.equal( conztant( "HELLO_WORLD" ), true ) ) );
+	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => {
 
-	describe( "`conztant( 'hello world' )`", ( ) => it( "should return false", ( ) => assert.equal( conztant( "hello world" ), false ) ) );
+		it( "should return true", ( ) => {
+
+			assert.equal( conztant( "HELLO_WORLD" ), true );
+
+		} );
+
+	} );
+
+	describe( "`conztant( 'hello world' )`", ( ) => {
+
+		it( "should return false", ( ) => {
+
+			assert.equal( conztant( "hello world" ), false );
+
+		} );
+
+	} );
 
 } );
 
