@@ -39,7 +39,7 @@
 				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
 				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
-			"repository": "https://github.com/volkovasystems/numric.git"
+			"repository": "https://github.com/volkovasystems/conztant.git"
 		}
 	@end-test-configuration
 
@@ -69,16 +69,38 @@ const conztant = require( "./conztant.support.js" );
 const path = require( "path" );
 //: @end-bridge
 
+
+//: @server:
+
 describe( "conztant", ( ) => {
-	//: @!bridge:
 
 	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => it( "should return true", ( ) => assert.equal( conztant( "HELLO_WORLD" ), true ) ) );
 
 	describe( "`conztant( 'hello world' )`", ( ) => it( "should return false", ( ) => assert.equal( conztant( "hello world" ), false ) ) );
 
-	//: @end-bridge
+} );
 
-	//: @bridge:
+//: @end-server
+
+
+//: @client:
+
+describe( "conztant", ( ) => {
+
+	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => it( "should return true", ( ) => assert.equal( conztant( "HELLO_WORLD" ), true ) ) );
+
+	describe( "`conztant( 'hello world' )`", ( ) => it( "should return false", ( ) => assert.equal( conztant( "hello world" ), false ) ) );
+
+} );
+
+//: @end-client
+
+
+//: @bridge:
+
+describe( "conztant", ( ) => {
+
+
 	let directory = __dirname;
 	let testBridge = path.resolve( directory, "bridge.html" );
 	let bridgeURL = `file://${ testBridge }`;
@@ -103,6 +125,8 @@ describe( "conztant", ( ) => {
 
 	} );
 
-	//: @end-bridge
+
 
 } );
+
+//: @end-bridge
