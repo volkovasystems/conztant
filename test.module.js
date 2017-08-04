@@ -84,6 +84,7 @@ describe( "conztant", ( ) => {
 
 	} );
 
+
 	describe( "`conztant( 'hello world' )`", ( ) => {
 
 		it( "should return false", ( ) => {
@@ -113,6 +114,7 @@ describe( "conztant", ( ) => {
 
 	} );
 
+
 	describe( "`conztant( 'hello world' )`", ( ) => {
 
 		it( "should return false", ( ) => {
@@ -132,10 +134,7 @@ describe( "conztant", ( ) => {
 
 describe( "conztant", ( ) => {
 
-
-	let directory = __dirname;
-	let testBridge = path.resolve( directory, "bridge.html" );
-	let bridgeURL = `file://${ testBridge }`;
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => {
 
@@ -147,6 +146,7 @@ describe( "conztant", ( ) => {
 
 	} );
 
+
 	describe( "`conztant( 'hello world' )`", ( ) => {
 
 		it( "should return false", ( ) => {
@@ -156,8 +156,6 @@ describe( "conztant", ( ) => {
 		} );
 
 	} );
-
-
 
 } );
 
