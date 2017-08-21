@@ -75,24 +75,19 @@ const path = require( "path" );
 describe( "conztant", ( ) => {
 
 	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => {
-
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( conztant( "HELLO_WORLD" ), true );
 
 		} );
-
 	} );
 
-
 	describe( "`conztant( 'hello world' )`", ( ) => {
-
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( conztant( "hello world" ), false );
 
 		} );
-
 	} );
 
 } );
@@ -105,24 +100,19 @@ describe( "conztant", ( ) => {
 describe( "conztant", ( ) => {
 
 	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => {
-
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( conztant( "HELLO_WORLD" ), true );
 
 		} );
-
 	} );
 
-
 	describe( "`conztant( 'hello world' )`", ( ) => {
-
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( conztant( "hello world" ), false );
 
 		} );
-
 	} );
 
 } );
@@ -137,24 +127,19 @@ describe( "conztant", ( ) => {
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => {
-
 		it( "should be equal to true", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => conztant( "HELLO_WORLD" ) );
 
 			assert.equal( result.value, true );
 		} );
-
 	} );
 
-
 	describe( "`conztant( 'hello world' )`", ( ) => {
-
 		it( "should be equal to false", ( ) => {
 			let result = browser.url( bridgeURL ).execute( ( ) => conztant( "hello world" ) );
 
 			assert.equal( result.value, false );
 		} );
-
 	} );
 
 } );
