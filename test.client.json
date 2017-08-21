@@ -1,0 +1,116 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-21T11:25:02.885Z",
+	"end": "2017-08-21T11:25:36.001Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "conztant",
+			"duration": 0,
+			"start": "2017-08-21T11:25:35.690Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "conztant",
+			"duration": 132,
+			"start": "2017-08-21T11:25:35.690Z",
+			"end": "2017-08-21T11:25:35.822Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-21T11:25:35.692Z",
+					"end": "2017-08-21T11:25:35.693Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "conztant",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-21T11:25:35.778Z",
+					"end": "2017-08-21T11:25:35.778Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "conztant",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-21T11:25:35.779Z",
+					"end": "2017-08-21T11:25:35.781Z",
+					"duration": 2,
+					"title": "\"before each\" hook",
+					"associatedSuite": "conztant",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-21T11:25:35.822Z",
+					"end": "2017-08-21T11:25:35.822Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "conztant",
+					"associatedTest": "should be equal to false"
+				},
+				{
+					"start": "2017-08-21T11:25:35.822Z",
+					"end": "2017-08-21T11:25:35.822Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "conztant"
+				}
+			]
+		},
+		{
+			"name": "`conztant( 'HELLO_WORLD' )`",
+			"duration": 88,
+			"start": "2017-08-21T11:25:35.691Z",
+			"end": "2017-08-21T11:25:35.779Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-21T11:25:35.692Z",
+					"end": "2017-08-21T11:25:35.777Z",
+					"duration": 85,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`conztant( 'hello world' )`",
+			"duration": 43,
+			"start": "2017-08-21T11:25:35.779Z",
+			"end": "2017-08-21T11:25:35.822Z",
+			"tests": [
+				{
+					"name": "should be equal to false",
+					"start": "2017-08-21T11:25:35.779Z",
+					"end": "2017-08-21T11:25:35.822Z",
+					"duration": 43,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

@@ -71,24 +71,19 @@ const conztant = require( "./conztant.js" );
 describe( "conztant", ( ) => {
 
 	describe( "`conztant( 'HELLO_WORLD' )`", ( ) => {
-
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( conztant( "HELLO_WORLD" ), true );
 
 		} );
-
 	} );
 
-
 	describe( "`conztant( 'hello world' )`", ( ) => {
-
 		it( "should be equal to false", ( ) => {
 
 			assert.equal( conztant( "hello world" ), false );
 
 		} );
-
 	} );
 
 } );
